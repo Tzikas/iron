@@ -69,7 +69,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:3001']
+  origin: ['https://ironwork.herokuapp.com']
 }))
 app.options('*', cors()) // include before other routes
 
