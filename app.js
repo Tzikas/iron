@@ -79,7 +79,7 @@ app.use(cors({
 app.options('*', cors()) // include before other routes
 
 
-
+    /*
 // CORS
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Credentials', true);
@@ -91,7 +91,7 @@ app.use(function(req, res, next) {
     }
     next();
 });
-
+*/
 
 const index = require('./routes/index');
 app.use('/', index);
