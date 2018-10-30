@@ -69,18 +69,19 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 
 
-/*
+
 app.use(cors({
   credentials: true,
     //origin: ['https://ironwork.herokuapp.com']
-    origin: ['http://localhost:3001']
+    //origin: ['http://localhost:3001']
     
 }))
 app.options('*', cors()) // include before other routes
 
 
-*/
+
 // CORS
+/*
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Credentials', true);
     res.header('Access-Control-Allow-Origin', '*');
@@ -91,6 +92,7 @@ app.use(function(req, res, next) {
     }
     next();
 });
+*/
 
 
 const index = require('./routes/index');
